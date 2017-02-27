@@ -151,7 +151,8 @@ First, create a new `components` directory inside `lib` if you haven't done so y
 import React, { PropTypes, Component } from 'react';
 import { Components, registerComponent } from 'meteor/nova:core';
 
-const MoviesWrapper = () => 
+const MoviesWrapper = () => {
+return (
   <div className="wrapper framework-demo">
 
     <div className="header">
@@ -163,6 +164,8 @@ const MoviesWrapper = () =>
     </div>
 
   </div>
+  )
+ }
 
 registerComponent('MoviesWrapper', MoviesWrapper);
 ```
